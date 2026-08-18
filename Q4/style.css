@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f6fa;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+.header {
+    background: #174a7c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px 12px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header p {
+    margin-bottom: 0;
+}
+
+.card,
+.result-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5df;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #174a7c;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #174a7c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #0e385f;
+}
+
+button.reset {
+    background: #dce2e7;
+    color: #333;
+    margin-top: 10px;
+}
+
+.result-card {
+    border-radius: 12px;
+}
+
+.result-card h2 {
+    text-align: center;
+    color: #174a7c;
+    margin-top: 0;
+}
+
+.student-name {
+    background: #eaf3fa;
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.student-name span {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.student-name strong {
+    font-size: 22px;
+    color: #174a7c;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.result {
+    background: #eef5fb;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #d8e5ef;
+}
+
+.result span {
+    display: block;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.result strong {
+    font-size: 24px;
+    color: #174a7c;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .card,
+    .result-card {
+        padding: 20px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+}
