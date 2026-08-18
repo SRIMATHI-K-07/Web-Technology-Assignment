@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Admission Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+<h1>Student Admission Form</h1>
+<p>College Admission Portal</p>
+</header>
+
+<div class="container">
+
+<img src="https://kpriet.edu.in/asset/frontend/images/about/governance/header.webp" alt="College Campus">
+
+<form>
+
+<h2>Personal Information</h2>
+
+<label>Student Name</label>
+<input type="text" placeholder="Enter name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter email">
+
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter mobile number">
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Gender</label>
+
+<div class="options">
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+</div>
+
+<h2>Academic Information</h2>
+
+<label>Course</label>
+
+<select>
+<option>Select Course</option>
+<option>Computer Science</option>
+<option>Electronics</option>
+<option>Mechanical</option>
+<option>Civil</option>
+</select>
+
+<label>Percentage</label>
+<input type="number" min="0" max="100" placeholder="Enter percentage">
+
+<label>Address</label>
+<textarea rows="4" placeholder="Enter your address"></textarea>
+
+<label>Upload Photo</label>
+<input type="file" accept="image/*">
+
+<h2>College Media</h2>
+
+<label>College Video</label>
+<video controls>
+<source src="video.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+
+<label>College Audio</label>
+<audio controls>
+<source src="audio.mpeg" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+<h2>Activities</h2>
+
+<div class="options">
+<label><input type="checkbox"> Sports</label>
+<label><input type="checkbox"> Music</label>
+<label><input type="checkbox"> Coding</label>
+</div>
+
+<button type="submit">Submit Application</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
