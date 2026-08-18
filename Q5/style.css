@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f5;
+    color: #252525;
+}
+
+.page {
+    width: 92%;
+    max-width: 1050px;
+    margin: 30px auto;
+}
+
+header {
+    background: #252b35;
+    color: white;
+    padding: 22px 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo {
+    background: #f4b942;
+    color: #252b35;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.brand p {
+    margin: 3px 0 0;
+    color: #c8cdd4;
+    font-size: 13px;
+}
+
+.bill-icon {
+    border: 1px solid #69717c;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+main {
+    margin-top: 25px;
+}
+
+.title {
+    background: white;
+    padding: 22px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid #f4b942;
+}
+
+.title h2 {
+    margin: 0;
+    color: #252b35;
+}
+
+.title p {
+    margin: 5px 0 0;
+    color: #707780;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.product-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #dce1e6;
+    position: relative;
+}
+
+.product-card:hover {
+    border-color: #f4b942;
+}
+
+.product-number {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    color: #a3a8ae;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.product-card h3 {
+    margin: 0 0 20px;
+    color: #252b35;
+}
+
+.product-card label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 14px 0 6px;
+}
+
+.product-card input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cdd3d9;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.product-card input:focus {
+    outline: none;
+    border-color: #f4b942;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.generate {
+    background: #f4b942;
+    color: #252b35;
+}
+
+.generate:hover {
+    background: #e5a92f;
+}
+
+.clear {
+    background: #d7dce1;
+    color: #333;
+}
+
+.clear:hover {
+    background: #c5cbd1;
+}
+
+.receipt {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    border: 1px solid #dce1e6;
+}
+
+.receipt-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #d5d9dd;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+.receipt-head h2 {
+    margin: 0;
+}
+
+.receipt-head p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.receipt-head > span {
+    width: 40px;
+    height: 40px;
+    background: #252b35;
+    color: #f4b942;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.table {
+    border: 1px solid #dce1e6;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+    padding: 13px;
+    border-bottom: 1px solid #e5e7e9;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row.heading {
+    background: #252b35;
+    color: white;
+    font-weight: bold;
+}
+
+.bill-details {
+    width: 400px;
+    max-width: 100%;
+    margin: 20px 0 0 auto;
+}
+
+.bill-details > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+    border-bottom: 1px solid #e0e3e6;
+}
+
+.bill-details strong {
+    color: #333;
+}
+
+.bill-details .payable {
+    background: #fff6dc;
+    padding: 16px;
+    margin-top: 8px;
+    border: 1px solid #f4d889;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.payable strong {
+    color: #c68a00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .row {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .page {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    header {
+        padding: 18px;
+    }
+
+    .bill-icon {
+        display: none;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .row {
+        grid-template-columns: 1.6fr 0.7fr 1fr 1.2fr;
+        padding: 10px 6px;
+        font-size: 12px;
+    }
+}
